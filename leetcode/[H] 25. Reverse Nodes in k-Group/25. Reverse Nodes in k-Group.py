@@ -12,8 +12,6 @@ class Solution:
             head = head.next
             
         length = len(nodes)
-        if length < k:
-            return nodes[0]
         
         for i in range(0, length - (length % k), k):
             for j in range(k // 2):
